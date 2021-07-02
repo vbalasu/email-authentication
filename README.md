@@ -2,6 +2,8 @@
 
 `email-authentication` is a web service that generates one-time passwords (OTP) and sends them to a specified email address.
 
+This is live at [https://email-authentication.cloudmatica.com](https://email-authentication.cloudmatica.com)
+
 Input
 - email address [required], callback url [optional]
 
