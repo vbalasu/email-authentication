@@ -6,7 +6,7 @@ Input
 - email address [required], callback url [optional]
 
 Output
-- Email sent to address from auth@cloudmatica.com, with OTP in the body. Sent as a link if callback URL is provided
+- Email sent to address from noreply@cloudmatica.com, with OTP in the body. Sent as a link if callback URL is provided
 
 Process
 - System generates a uuid to serve as the OTP. The generated OTP is stored for later verification
