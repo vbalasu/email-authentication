@@ -3,7 +3,7 @@ from chalice import Chalice
 app = Chalice(app_name='email-authentication')
 
 
-@app.route('/generate/{email}')
+@app.route('/generate/{email}', cors=True)
 def generate(email):
     import boto3, uuid
     from botocore.exceptions import ClientError
@@ -43,7 +43,7 @@ def generate(email):
         print("Email sent! Message ID: ", response['MessageId'])
         return True
 
-@app.route('/verify/{email}/{otp}')
+@app.route('/verify/{email}/{otp}', cors=True)
 def verify(email, otp):
     import boto3
     s3 = boto3.client('s3')
